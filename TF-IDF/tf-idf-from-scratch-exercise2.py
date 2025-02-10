@@ -61,7 +61,7 @@ i = np.random.choice(N)
 row = df.iloc[i]
 
 print("\nLabel:",row['labels'])
-print("Text:",row['text'].split("\n",1)[0])
+print("Text:",row['text'].split("\n",1)[0]+"\n")
 print("Top 5 terms: ")
 
 scores = tf_idf[i].toarray()[0]
