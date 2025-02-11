@@ -10,7 +10,7 @@ from scipy.sparse import coo_matrix,csr_matrix
 
 nltk.download('all')
 
-df = pd.read_csv('../bbc_text_cls.csv')
+df = pd.read_csv('../Datasets/bbc_text_cls.csv')
 
 #Populate word to index mapping matrix.
 idx = 0
@@ -25,9 +25,7 @@ for doc in df['text']:
         if word not in word2idx:
             word2idx[word] = idx
             idx +=1
-
         doc_as_int.append(word2idx[word])
-
     tokenized_docs.append(doc_as_int)
 
 

@@ -5,7 +5,7 @@ from nltk import word_tokenize
 
 nltk.download('all')
 
-df = pd.read_csv('../bbc_text_cls.csv')
+df = pd.read_csv('../Datasets/bbc_text_cls.csv')
 df.head()
 
 #Populate word2idx

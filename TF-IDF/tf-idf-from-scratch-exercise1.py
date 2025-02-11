@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer,TfidfTransformer
 
-df = pd.read_csv('../bbc_text_cls.csv')
+df = pd.read_csv('../Datasets/bbc_text_cls.csv')
 print(df.head())
 
 vectorizer = CountVectorizer(lowercase=True,token_pattern=r'\b\w+\b')
