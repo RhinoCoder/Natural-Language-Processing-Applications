@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+Datasets/
+"Datasets/"
+
+Datasets/GoogleNews-vectors-negative300.bin
+Datasets/*
