@@ -4,6 +4,16 @@
 Repository contains implementations of various Natural Language Processing (NLP) algorithms and applications. It includes fundamental techniques such as tokenization, vectorization, TF-IDF, word embeddings, and advanced deep learning models for text classification, sentiment analysis, named entity recognition (NER), machine translation, and more.
  
 
+# Word Embeddings
+Find analogies and neighbor words of a given word using your own or provided word embeddings text file.
+
+Neighbors
+![img.png](img.png)
+
+
+Analogies
+![img_1.png](img_1.png)
+
 
 ## Datasets & Models
 As for datasets of the program,
