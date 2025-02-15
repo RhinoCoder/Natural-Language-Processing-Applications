@@ -8,10 +8,13 @@ Repository contains implementations of various Natural Language Processing (NLP)
 Find analogies and neighbor words of a given word using your own or provided word embeddings text file.
 
 Neighbors
+
 ![img.png](img.png)
 
 
+
 Analogies
+
 ![img_1.png](img_1.png)
 
 
