@@ -38,7 +38,6 @@ def SplitTrainTest(indexedLines,labels,test_size = 0.2):
     XTrain,XTest,YTrain,YTest = train_test_split(
         indexedLines,labels,test_size= test_size,random_state=42
     )
-
     return XTrain,XTest,YTrain,YTest
 
 def ConvertLinesToIndices(lines,word2index):
