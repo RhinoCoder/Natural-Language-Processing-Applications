@@ -18,8 +18,9 @@ Find analogies and neighbor words of a given word using your own or provided wor
 ![img_1.png](img_1.png)
 
 
-# HMM - Poetry Classifier
+# Probabilistic Models
 
+## HMM - Poetry Classifier
 This program uses hidden markov models to distinguish between given two authors'
 poetries from each other with the accuracy of ~65%, output of the program should look like
 this.
