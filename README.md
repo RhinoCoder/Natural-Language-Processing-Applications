@@ -23,9 +23,14 @@ Find analogies and neighbor words of a given word using your own or provided wor
 ## HMM - Poetry Classifier
 This program uses hidden markov models to distinguish between given two authors'
 poetries from each other with the accuracy of ~65%, output of the program should look like
-this.
-
+this. To improve consider using bigrams or trigrams instead of just single-word transitions.
 ![img_2.png](img_2.png)
+
+
+
+## Markov Model Text Classifier (same as above,different approach)
+A better accuracy with a different implementation taken from Lazy Programmer.
+![img_3.png](img_3.png)
 
 
 ## Datasets & Models
