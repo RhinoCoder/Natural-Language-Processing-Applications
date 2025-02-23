@@ -44,7 +44,7 @@ def ConvertLinesToIndices(lines,word2index):
     indexedLines = []
     for line in lines:
         tokens = line.lower().split()
-        indices = [word2index.get(word,word2index["<UNK>"]) for word in tokens]
+        indices = [word2index.get(word,word2index['<unk>']) for word in tokens]
         indexedLines.append(indices)
 
     return indexedLines
@@ -56,10 +56,9 @@ def TrainMarkovModel(lines):
     wordCounts = defaultdict(int)
 
     for line in lines:
-        tokens = line.lower().split()
-        for i in range(len(tokens) - 1):
-            currentWord = tokens[i]
-            nextWord = tokens[i + 1]
+        for i in range(len(line) - 1):
+            currentWord = line[i]
+            nextWord = line[i + 1]
             transitionCounts[currentWord][nextWord] += 1
             wordCounts[currentWord] += 1
 
@@ -80,7 +79,7 @@ def TrainMarkovModel(lines):
 
 def AnimatedDots(message,delay = 0.1):
     print(message,end="",flush=True)
-    for i in range(15):
+    for i in range(7):
         time.sleep(delay)
         print(".",end="",flush=True)
     print("\n")
@@ -144,7 +143,7 @@ def main():
     #Map each unique word to a unique integer value.
     uniqueWords = set(allTokens)
     word2index = {word: idx for idx,word in enumerate(uniqueWords,start=0)}
-    word2index["<UNK>"] = len(word2index)
+    word2index['<unk>'] = len(word2index)
 
     AnimatedDots("Converting lines into indices")
     indexedLines = ConvertLinesToIndices(combinedVocabulary,word2index)
