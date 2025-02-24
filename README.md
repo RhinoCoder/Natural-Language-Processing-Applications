@@ -27,7 +27,7 @@ this. To improve consider using bigrams or trigrams instead of just single-word 
 
 ![img_2.png](img_2.png)
 
-For instance, using a second order markov has increased accuracy up to 77% with a slight changes
+For instance, using a second order markov model has increased accuracy up to 77% with a slight changes
 in the implementation as shown in the below image.
 
 ![img_4.png](img_4.png)
