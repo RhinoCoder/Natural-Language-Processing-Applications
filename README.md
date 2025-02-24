@@ -9,13 +9,13 @@ Find analogies and neighbor words of a given word using your own or provided wor
 
 ### Neighbors
 
-![img.png](Output Images/img.png)
+![img.png](img.png)
 
 
 
 ### Analogies
 
-![img_1.png](Output Images/img_1.png)
+![img_1.png](img_1.png)
 
 
 # Probabilistic Models
@@ -25,17 +25,17 @@ This program uses hidden markov models to distinguish between given two authors'
 poetries from each other with the accuracy of ~65%, output of the program should look like
 this. To improve consider using bigrams or trigrams instead of just single-word transitions.
 
-![img_2.png](Output Images/img_2.png)
+![img_2.png](img_2.png)
 
 For instance, using a second order markov has increased accuracy up to 77% with a slight changes
 in the implementation as shown in the below image.
 
-![img_4.png](Output Images/img_4.png)
+![img_4.png](img_4.png)
 
 
 ## Markov Model Text Classifier (same as above,different approach)
 A better accuracy with a different implementation taken from Lazy Programmer.
-![img_3.png](Output Images/img_3.png)
+![img_3.png](img_3.png)
 
 
 ## Datasets & Models
