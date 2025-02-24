@@ -24,8 +24,13 @@ Find analogies and neighbor words of a given word using your own or provided wor
 This program uses hidden markov models to distinguish between given two authors'
 poetries from each other with the accuracy of ~65%, output of the program should look like
 this. To improve consider using bigrams or trigrams instead of just single-word transitions.
+
 ![img_2.png](img_2.png)
 
+For instance, using a second order markov has increased accuracy up to 77% with a slight changes
+in the implementation as shown in the below image.
+
+![img_4.png](img_4.png)
 
 
 ## Markov Model Text Classifier (same as above,different approach)
