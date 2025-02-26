@@ -33,9 +33,9 @@ print("Num GPUs Available: ", len(gpus))
 # Force GPU usage for the entire script
 with tf.device('/GPU:0'):
     data = open('../Datasets/nlp.txt', encoding="utf8").read()
-    wordcloud = WordCloud(max_font_size=50, max_words=100, background_color="black").generate(data)
+    wordcloud = WordCloud(max_font_size=60, max_words=90, background_color="black").generate(data)
 
-    plt.figure(figsize=(8,4))
+    plt.figure(figsize=(19,10))
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
     plt.savefig("Wordclound.png")
