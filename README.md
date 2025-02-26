@@ -1,6 +1,6 @@
 # Natural-Language-Processing-Applications
 
-![img_7.png](img_7.png)![Wordclound.png](../../Pictures/Wordclound.png)
+![img_8.png](img_8.png)
 
 Repository contains implementations of various Natural Language Processing (NLP) algorithms and applications. It includes fundamental techniques such as tokenization, vectorization, TF-IDF, word embeddings, and advanced deep learning models for text classification, sentiment analysis, named entity recognition (NER), machine translation, and more.
  
