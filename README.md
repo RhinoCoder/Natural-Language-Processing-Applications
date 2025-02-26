@@ -37,6 +37,17 @@ in the implementation as shown in the below image.
 A better accuracy with a different implementation taken from Lazy Programmer.
 ![img_3.png](img_3.png)
 
+## LSTM Based Poetry Generator
+A lstm based generated, based on input training text, as shown
+in the picture, program completes the remaining part. 
+
+The model is trained on
+150 epoch results around ~78%.
+![img_5.png](img_5.png)
+
+200 epoch results around ~90%
+![img_6.png](img_6.png)
+
 
 ## Datasets & Models
 As for datasets of the program,
