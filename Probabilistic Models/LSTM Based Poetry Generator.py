@@ -32,7 +32,7 @@ print("Num GPUs Available: ", len(gpus))
 
 # Force GPU usage for the entire script
 with tf.device('/GPU:0'):
-    data = open('../Datasets/robert_frost.txt', encoding="utf8").read()
+    data = open('../Datasets/nlp.txt', encoding="utf8").read()
     wordcloud = WordCloud(max_font_size=50, max_words=100, background_color="black").generate(data)
 
     plt.figure(figsize=(8,4))
@@ -79,7 +79,7 @@ with tf.device('/GPU:0'):
     print(model.summary())
 
     # Training with GPU
-    history = model.fit(predictors, label, epochs=200, verbose=1)
+    history = model.fit(predictors, label, epochs=2, verbose=1)
 
     # Generating the text using trained model
     seed_text = "The world"
