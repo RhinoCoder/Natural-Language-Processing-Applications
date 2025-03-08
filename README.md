@@ -48,6 +48,12 @@ The model is trained on
 200 epoch results around ~90%
 ![img_6.png](img_6.png)
 
+## Basic Article Spinner
+The spinner works as observing how 3 words act together based on the middle word to 
+change it with its synonym to rephrase/spin the article or a given text.
+
+![img_9.png](img_9.png)
+
 
 ## Datasets & Models
 As for datasets of the program,
