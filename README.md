@@ -62,6 +62,11 @@ As for datasets of the program,
 -glove.6B.300d.txt
 
 is used and can be found from the following links.
+To get the datasets into your colab environment use,
+```bash
+!wget <your_desired_url> 
+Example usage -> !wget -nc https://lazyprogrammer.me/course_files/nlp/bbc_text_cls.csv
+```
 
 Glove Embeddings: https://github.com/stanfordnlp/GloVe
 
