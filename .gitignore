@@ -5,3 +5,13 @@ Datasets/
 
 Datasets/GoogleNews-vectors-negative300.bin
 Datasets/*
+
+# PyCharm/IntelliJ files
+.idea/
+*.iml
+*.xml
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
