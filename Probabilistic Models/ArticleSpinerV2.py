@@ -11,16 +11,13 @@ def main():
     nltk.download('punkt')
     nltk.download('wordnet')
     nltk.download('omw-1.4')
+    nltk.download('all')
     nltk.download('averaged_perceptron_tagger')
 
     df = pd.read_csv("../Datasets/bbc_text_cls.csv")
-    print(df.head(), "\n")
-
     labels = set(df['labels'])
     print("Labels are :", labels)
-
     label = 'business'
-
     texts = df[df['labels'] == label]['text']
     print(texts.head())
 
@@ -45,12 +42,10 @@ def main():
 
 
     for key, d in probs.items():
-
         total = sum(d.values())
         for k, v in d.items():
             d[k] = v / total
 
-    print(probs)
 
     detokenizer = TreebankWordDetokenizer()
 
@@ -58,7 +53,6 @@ def main():
     i = np.random.choice(texts.shape[0])
     doc = texts.iloc[i]
     newDoc = spinDocument(doc, probs, detokenizer)
-
     print(textwrap.fill(newDoc, replace_whitespace=False, fix_sentence_endings=True))
 
 
@@ -100,12 +94,10 @@ def spinLine(line, probs, detokenizer):
 
             if len(pDist) > 1 and np.random.random() < 0.3:
                 middle = sampleWord(pDist)
-
                 if middle != t1:
                     output.append("<" + middle + ">")
                 else:
                     output.append(t1)
-
                 output.append(t2)
                 i += 2
             else:
