@@ -80,3 +80,5 @@ Google News: https://www.kaggle.com/datasets/leadbest/googlenewsvectorsnegative3
 Edgar Allan Poe Poetries: https://raw.githubusercontent.com/lazyprogrammer/machine_learning_examples/master/hmm_class/edgar_allan_poe.txt
 
 Robert Frost Poetries:  https://raw.githubusercontent.com/lazyprogrammer/machine_learning_examples/master/hmm_class/robert_frost.txt
+
+BBC News & Articles (alternative): https://www.kaggle.com/datasets/hgultekin/bbcnewsarchive/data
