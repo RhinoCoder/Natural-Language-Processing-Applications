@@ -54,6 +54,29 @@ change it with its synonym to rephrase/spin the article or a given text.
 
 ![img_9.png](img_9.png)
 
+## Sentiment Analysis
+App performs sentiment analysis on feedback records from an airline.csv dataset using a Tf-Idf vectorizer to convert text into numerical features and a Logistic Regression model for classification. 
+Initially, it handled three sentiment classes: positive, negative, and neutral. 
+The code then transitions to a binary classification task by focusing only on positive and negative feedback. 
+It evaluates the model's performance using accuracy and AUC scores and visualizes the results using confusion matrices. 
+Furthermore, the script extracts and displays the words that the model most strongly associates with positive and negative sentiment based on the learned weights. 
+App also includes a section outlining potential future exercises, such as identifying the most misclassified tweets and exploring the impact of class weighting. 
+The current implementation focuses on airline feedback records dataset, it can be adapted for similar sentiment analysis tasks. 
+Adding more classes and adjusting thresholds are suggested areas for future improvement.
+
+### Class Distribution
+
+![img.png](Output%20Images/img.png)
+
+### Heatmap
+
+![img_1.png](Output%20Images/img_1.png)
+
+
+### Learnt best positive words
+
+![img_2.png](Output%20Images/img_2.png)
+
 
 ## Datasets & Models
 As for datasets of the program,
