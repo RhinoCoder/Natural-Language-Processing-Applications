@@ -9,13 +9,13 @@ Find analogies and neighbor words of a given word using your own or provided wor
 
 ### Neighbors
 
-![img.png](img.png)
+![img.png](Output Images/img.png)
 
 
 
 ### Analogies
 
-![img_1.png](img_1.png)
+![img_1.png](Output Images/img_1.png)
 
 
 # Probabilistic Models
@@ -25,17 +25,17 @@ This program uses hidden markov models to distinguish between given two authors'
 poetries from each other with the accuracy of ~65%, output of the program should look like
 this. To improve consider using bigrams or trigrams instead of just single-word transitions.
 
-![img_2.png](img_2.png)
+![img_2.png](Output Images/img_2.png)
 
 For instance, using a second order markov model has increased accuracy up to 77% with a slight changes
 in the implementation as shown in the below image.
 
-![img_4.png](img_4.png)
+![img_4.png](Output Images/img_4.png)
 
 
 ## Markov Model Text Classifier (same as above,different approach)
 A better accuracy with a different implementation taken from Lazy Programmer.
-![img_3.png](img_3.png)
+![img_3.png](Output Images/img_3.png)
 
 ## LSTM Based Poetry Generator
 A lstm based generated, based on input training text, as shown
@@ -43,16 +43,16 @@ in the picture, program completes the remaining part.
 
 The model is trained on
 150 epoch results around ~78%.
-![img_5.png](img_5.png)
+![img_5.png](Output Images/img_5.png)
 
 200 epoch results around ~90%
-![img_6.png](img_6.png)
+![img_6.png](Output Images/img_6.png)
 
 ## Basic Article Spinner
 The spinner works as observing how 3 words act together based on the middle word to 
 change it with its synonym to rephrase/spin the article or a given text.
 
-![img_9.png](img_9.png)
+![img_9.png](Output Images/img_9.png)
 
 ## Sentiment Analysis
 App performs sentiment analysis on feedback records from an airline.csv dataset using a Tf-Idf vectorizer to convert text into numerical features and a Logistic Regression model for classification. 
@@ -66,16 +66,16 @@ Adding more classes and adjusting thresholds are suggested areas for future impr
 
 ### Class Distribution
 
-![img.png](Output%20Images/img.png)
+![img.png](Output Images/img1.png)
 
 ### Heatmap
 
-![img_1.png](Output%20Images/img_1.png)
+![img_1.png](Output Images/img_112.png)
 
 
 ### Learnt best positive words
 
-![img_2.png](Output%20Images/img_2.png)
+![img_2.png](Output Images/img_113.png)
 
 
 ## Datasets & Models
