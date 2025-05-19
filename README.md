@@ -82,6 +82,9 @@ Adding more classes and adjusting thresholds are suggested areas for future impr
 
 ## Text Summarization
 
+TextRank based on Google PageRank approach is used to implement a basic
+summarizer for texts taken from bbc news dataset. Quite easy and yet powerful.
+
 ## Datasets & Models
 As for datasets of the program,
 
