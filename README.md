@@ -80,6 +80,8 @@ Adding more classes and adjusting thresholds are suggested areas for future impr
 ![sentimentMostPositiveWords.png](Output%20Images/sentimentMostPositiveWords.png)
 
 
+## Text Summarization
+
 ## Datasets & Models
 As for datasets of the program,
 

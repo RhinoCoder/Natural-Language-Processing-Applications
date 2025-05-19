@@ -21,11 +21,12 @@ def summarizeText(text,factor = 0.15):
         norm='l1'
     )
     X = featurizer.fit_transform(sentences)
-    S = cosine_similarity(X)
-    S /= S.sum(axis=1,keepdims=True)
-    U = np.ones_like(S) / len(S)
-    S = (1 - factor) * S + factor * U
-    eigenVals,eigenVecs = np.linalg.eig(S.T)
+    G = cosine_similarity(X)
+    G /= G.sum(axis=1,keepdims=True)
+    U = np.ones_like(G) / len(G)
+    G = (1 - factor) * G + factor * U
+
+    eigenVals,eigenVecs = np.linalg.eig(G.T)
     scores = eigenVecs[:,0] / eigenVecs[:,0].sum()
     sortIdx = np.argsort(-scores)
 
@@ -58,34 +59,34 @@ def main():
     )
 
     X = featurizer.fit_transform(sentences)
-    Similarity = cosine_similarity(X)
-    print(f"Shape of Similarity:{Similarity.shape}")
+    G = cosine_similarity(X)
+    print(f"Shape of G:{G.shape}")
     print(f"Len of sentences: {len(sentences)}")
 
-    Similarity /= Similarity.sum(axis=1,keepdims=True)
-    print(f"\nSum is:{Similarity[0].sum()}")
+    G /= G.sum(axis=1,keepdims=True)
+    print(f"\nSum is:{G[0].sum()}")
 
-    UniformTransitionMatrix = np.ones_like(Similarity) / len(Similarity)
+    UniformTransitionMatrix = np.ones_like(G) / len(G)
     print(f"Sum of UTM: {UniformTransitionMatrix[0].sum()}")
 
 
     factor = 0.15
-    Similarity = (1 - factor) * Similarity + factor * UniformTransitionMatrix
-    print(f"\nSum is:{Similarity[0].sum()}")
+    G = (1 - factor) * G + factor * UniformTransitionMatrix
+    print(f"\nSum is:{G[0].sum()}")
 
-    eigenVals,eigenVecs = np.linalg.eig(Similarity.T)
+    eigenVals,eigenVecs = np.linalg.eig(G.T)
     print(eigenVals,"\n")
     print(eigenVecs[:,0],"\n")
-    print(eigenVecs[:,0].dot(Similarity))
+    print(eigenVecs[:,0].dot(G))
     print(eigenVecs[:,0] / eigenVecs[:,0].sum())
 
-    limitingDist = np.ones(len(Similarity)) / len(Similarity)
+    limitingDist = np.ones(len(G)) / len(G)
     threshold = 1e-8
     delta = float('inf')
     iters = 0
     while delta > threshold:
         iters +=1
-        p = limitingDist.dot(Similarity)
+        p = limitingDist.dot(G)
         delta = np.abs(p - limitingDist).sum()
         limitingDist = p
 
@@ -117,7 +118,6 @@ def main():
     print(f"Sumy summary is: \n {summary}")
     for s in summary:
         print(wrap(str(s)))
-
 
 
     print(f"Summarizer summary is: \n")
