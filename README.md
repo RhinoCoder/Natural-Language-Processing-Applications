@@ -85,6 +85,10 @@ Adding more classes and adjusting thresholds are suggested areas for future impr
 TextRank based on Google PageRank approach is used to implement a basic
 summarizer for texts taken from bbc news dataset. Quite easy and yet powerful.
 
+
+## Topic Modeling
+Recommender systems check -> Non negative matrix factorization.
+
 ## Datasets & Models
 As for datasets of the program,
 
